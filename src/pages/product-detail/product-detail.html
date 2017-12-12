@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>product-detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/icon/chai.jpeg"/>
+      <div class="info-background">
+        <div class="card-title">{{selectedProduct.productName}}</div>
+        <div class="card-sub-title">{{selectedProduct.unitPrice | currency:'USD':1.2-2}}</div>
+        <div>
+          <button class="card-add-to-card" ion-button color="light" (click)="addToCart(selectedProduct)">
+            <ion-icon name="basket">Sepete Ekle</ion-icon>
+
+          </button>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
