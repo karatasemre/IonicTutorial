@@ -1,0 +1,28 @@
+page-components {
+  .button-group {
+    .col {
+      &:first-child:not(:last-child) {
+        padding-right: 1em;
+        .button {
+          border-top-right-radius: 1em;
+          border-bottom-right-radius: 1em;
+        }
+      }
+      &:not(:first-child):not(:last-child) {
+        padding-right: 0;
+        padding-left: 0;
+        .button {
+          border-radius: 0;
+        }
+      }
+      &:last-child:not(:first-child) {
+        padding-left: 0;
+        .button {
+          border-top-left-radius: 1em;
+          border-bottom-left-radius: 1em;
+        }
+      }
+    }
+  }
+
+}

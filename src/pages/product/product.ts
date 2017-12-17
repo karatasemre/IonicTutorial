@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
 import {ProductService} from "../../providers/product.service";
 import {Product} from "../../entities/product";
 import {ProductDetailPage} from "../product-detail/product-detail";
@@ -26,13 +26,20 @@ export class ProductPage {
   selectedCategory: string;
   filterText: string = "";
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public productService: ProductService, public categoryService: CategoryService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public productService: ProductService, public categoryService: CategoryService, public loadingController: LoadingController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProductPage');
-    this.getProducts();
-    this.getCategories();
+    let loader = this.loadingController.create({
+      content: "Please wait"
+    });
+    loader.present().then(() => {
+      this.getProducts();
+      this.getCategories();
+      loader.dismiss();
+    })
+
   }
 
   getProducts() {

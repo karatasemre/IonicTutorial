@@ -13,6 +13,14 @@ import {HttpModule} from "@angular/http";
 import {ProductDetailPage} from "../pages/product-detail/product-detail";
 import {CartService} from "../providers/cart.service";
 import {CartPage} from "../pages/cart/cart";
+import {ComponentsPage} from "../pages/components/components";
+import {ActionsheetPage} from "../pages/actionsheet/actionsheet";
+import {AlertPage} from "../pages/alert/alert";
+import {CheckboxPage} from "../pages/checkbox/checkbox";
+import {FabsPage} from "../pages/fabs/fabs";
+import {GesturesPage} from "../pages/gestures/gestures";
+import {LoadingPage} from "../pages/loading/loading";
+import {SliderPage} from "../pages/slider/slider";
 
 @NgModule({
   declarations: [
@@ -21,7 +29,15 @@ import {CartPage} from "../pages/cart/cart";
     ListPage,
     ProductPage,
     ProductDetailPage,
-    CartPage
+    CartPage,
+    ComponentsPage,
+    ActionsheetPage,
+    AlertPage,
+    CheckboxPage,
+    FabsPage,
+    GesturesPage,
+    LoadingPage,
+    SliderPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +51,15 @@ import {CartPage} from "../pages/cart/cart";
     ListPage,
     ProductPage,
     ProductDetailPage,
-    CartPage
+    CartPage,
+    ComponentsPage,
+    ActionsheetPage,
+    AlertPage,
+    CheckboxPage,
+    FabsPage,
+    GesturesPage,
+    LoadingPage,
+    SliderPage
   ],
   providers: [
     CartService,
