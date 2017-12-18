@@ -21,6 +21,11 @@ import {FabsPage} from "../pages/fabs/fabs";
 import {GesturesPage} from "../pages/gestures/gestures";
 import {LoadingPage} from "../pages/loading/loading";
 import {SliderPage} from "../pages/slider/slider";
+import {NativePage} from "../pages/native/native";
+import {CallNumberPage} from "../pages/call-number/call-number";
+import {BatteryPage} from "../pages/battery/battery";
+import {CameraPage} from "../pages/camera/camera";
+import {List2Page} from "../pages/list2/list2";
 
 @NgModule({
   declarations: [
@@ -37,7 +42,12 @@ import {SliderPage} from "../pages/slider/slider";
     FabsPage,
     GesturesPage,
     LoadingPage,
-    SliderPage
+    SliderPage,
+    NativePage,
+    CallNumberPage,
+    BatteryPage,
+    CameraPage,
+    List2Page
   ],
   imports: [
     BrowserModule,
@@ -59,7 +69,12 @@ import {SliderPage} from "../pages/slider/slider";
     FabsPage,
     GesturesPage,
     LoadingPage,
-    SliderPage
+    SliderPage,
+    NativePage,
+    CallNumberPage,
+    BatteryPage,
+    CameraPage,
+    List2Page
   ],
   providers: [
     CartService,

@@ -7,6 +7,8 @@ import {FabsPage} from "../fabs/fabs";
 import {GesturesPage} from "../gestures/gestures";
 import {LoadingPage} from "../loading/loading";
 import {SliderPage} from "../slider/slider";
+import {ListPage} from "../list/list";
+import {List2Page} from "../list2/list2";
 
 /**
  * Generated class for the ComponentsPage page.
@@ -48,6 +50,14 @@ export class ComponentsPage {
 
   openGesturesPage() {
     this.navCtrl.push(GesturesPage)
+  }
+
+  openListPage() {
+    this.navCtrl.push(ListPage)
+  }
+
+  openList2Page() {
+    this.navCtrl.push(List2Page)
   }
 
   openLoadingPage() {
