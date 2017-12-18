@@ -26,6 +26,7 @@ import {CallNumberPage} from "../pages/call-number/call-number";
 import {BatteryPage} from "../pages/battery/battery";
 import {CameraPage} from "../pages/camera/camera";
 import {List2Page} from "../pages/list2/list2";
+import {BarcodePage} from "../pages/barcode/barcode";
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import {List2Page} from "../pages/list2/list2";
     CallNumberPage,
     BatteryPage,
     CameraPage,
-    List2Page
+    List2Page,
+    BarcodePage
   ],
   imports: [
     BrowserModule,
@@ -74,7 +76,8 @@ import {List2Page} from "../pages/list2/list2";
     CallNumberPage,
     BatteryPage,
     CameraPage,
-    List2Page
+    List2Page,
+    BarcodePage
   ],
   providers: [
     CartService,

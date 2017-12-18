@@ -3,6 +3,7 @@ import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {CallNumberPage} from "../call-number/call-number";
 import {BatteryPage} from "../battery/battery";
 import {CameraPage} from "../camera/camera";
+import {BarcodePage} from "../barcode/barcode";
 
 /**
  * Generated class for the NativePage page.
@@ -39,4 +40,7 @@ export class NativePage {
     this.navCtrl.push(CameraPage)
   }
 
+  openBarcodePage() {
+    this.navCtrl.push(BarcodePage)
+  }
 }
